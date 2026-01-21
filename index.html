@@ -10,7 +10,8 @@
     <style>
         body { font-family: 'Noto Sans KR', sans-serif; }
         .hero-bg {
-            background: linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.9)), url('https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            /* 수정됨: 기존의 아주 어두운 톤에서 조금 더 밝은 블루/네이비 톤으로 조정 */
+            background: linear-gradient(rgba(30, 58, 138, 0.75), rgba(15, 23, 42, 0.85)), url('https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
             background-size: cover;
             background-position: center;
         }
@@ -37,92 +38,90 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero-bg min-h-screen flex items-center justify-center text-center px-4 relative">
-        <div class="max-w-4xl mx-auto text-white pt-20">
-            <span class="inline-block py-1 px-3 rounded-full bg-blue-600/30 border border-blue-400 text-blue-300 text-sm font-semibold mb-6 animate-pulse">
+    <header class="hero-bg min-h-screen flex flex-col items-center justify-center text-center px-4 relative pb-20">
+        <div class="max-w-4xl mx-auto text-white pt-28">
+            <span class="inline-block py-1 px-3 rounded-full bg-blue-500/30 border border-blue-300 text-blue-100 text-sm font-semibold mb-6 animate-pulse">
                 총판 및 대리점 파트너 공식 모집
             </span>
             <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight">
                 단순한 사진 인화를 넘어,<br>
                 <span class="gradient-text">AI 기술로 창조하는 새로운 경험</span>
             </h1>
-            <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+            <p class="text-lg md:text-xl text-gray-100 mb-10 max-w-2xl mx-auto leading-relaxed">
                 AI PhotoStory는 촬영부터 편집, 인화까지 원스톱으로 제공하는 차세대 자동화 키오스크입니다.<br class="hidden md:block">
                 페이스 스왑, 미래 2세 예측 등 혁신적인 AI 기능으로 귀하의 비즈니스에 폭발적인 수익 모델을 더하십시오.
             </p>
-            <div class="flex flex-col md:flex-row gap-4 justify-center">
+            <div class="flex flex-col md:flex-row gap-4 justify-center mb-12">
                 <a href="#features" class="bg-white text-gray-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition shadow-lg">
                     기능 자세히 보기
                 </a>
                 <a href="#contact" class="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-700 transition shadow-lg ring-4 ring-blue-600/30">
                     상담 및 구매 신청하기
                 </a>
-            <p class="mt-8 text-sm text-gray-400 font-medium">언제든지 문의 상담 환영합니다.</p>
-        </div>
-
-
-        <!-- YouTube Video Section -->
-<!-- Video Showcase Section -->
-<section class="py-24 bg-gradient-to-b from-black to-gray-900">
-    <div class="container mx-auto px-6">
-
-        <!-- Title -->
-        <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-black text-white mb-4">
-                AI PhotoStory 실제 동작 영상
-            </h2>
-            <p class="text-gray-400 max-w-2xl mx-auto">
-                단순한 포토키오스크가 아닙니다.<br>  
-                AI가 어떻게 고객 경험과 수익 모델을 바꾸는지 직접 확인하세요.
-            </p>
-        </div>
-
-        <!-- Video Card -->
-        <div class="max-w-5xl mx-auto relative group">
-            <div class="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-gray-700">
-
-                <!-- Thumbnail -->
-                <img
-                    src="https://img.youtube.com/vi/M0WfigWaXuY/maxresdefault.jpg"
-                    alt="AI PhotoStory Video Thumbnail"
-                    class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
-
-                <!-- Overlay -->
-                <div class="absolute inset-0 bg-black/50 flex items-center justify-center">
-
-                    <!-- Play Button -->
-                    <a
-                        href="https://www.youtube.com/watch?v=M0WfigWaXuY"
-                        target="_blank"
-                        class="relative flex items-center justify-center w-24 h-24 rounded-full bg-blue-600/90 hover:bg-blue-700 transition shadow-xl">
-
-                        <!-- Pulse -->
-                        <span class="absolute inline-flex h-full w-full rounded-full bg-blue-600 opacity-75 animate-ping"></span>
-
-                        <!-- Icon -->
-                        <i class="fas fa-play text-white text-3xl ml-1 relative"></i>
-                    </a>
-                </div>
             </div>
+            
+            <p class="mt-8 text-sm text-blue-100 font-medium">언제든지 문의 상담 환영합니다.</p>
+        </div>
+    </header>
 
-            <!-- CTA -->
-            <div class="mt-10 text-center">
-                <a href="#contact"
-                   class="inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-full font-bold text-lg shadow-xl transition transform hover:-translate-y-1">
-                    <i class="fas fa-handshake"></i>
-                    영상 보고 바로 상담 신청하기
-                </a>
-                <p class="mt-4 text-sm text-gray-400">
-                    영상 확인 후 상담 신청 시, 상세 제안 자료 제공
+    <!-- Video Showcase Section -->
+    <!-- 수정됨: 배경을 완전 블랙에서 조금 더 밝은 슬레이트 그레이 톤으로 변경 -->
+    <section class="py-24 bg-gradient-to-b from-slate-900 to-gray-800">
+        <div class="container mx-auto px-6">
+
+            <!-- Title -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-black text-white mb-4">
+                    AI PhotoStory 실제 동작 영상
+                </h2>
+                <p class="text-gray-300 max-w-2xl mx-auto">
+                    단순한 포토키오스크가 아닙니다.<br>  
+                    AI가 어떻게 고객 경험과 수익 모델을 바꾸는지 직접 확인하세요.
                 </p>
             </div>
-    </div>
-</section>
 
-    </div>
-</section>
+            <!-- Video Card -->
+            <div class="max-w-5xl mx-auto relative group">
+                <div class="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-gray-600">
 
-    </header>
+                    <!-- Thumbnail -->
+                    <img
+                        src="https://img.youtube.com/vi/M0WfigWaXuY/maxresdefault.jpg"
+                        alt="AI PhotoStory Video Thumbnail"
+                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+
+                    <!-- Overlay -->
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+
+                        <!-- Play Button -->
+                        <a
+                            href="https://www.youtube.com/watch?v=M0WfigWaXuY"
+                            target="_blank"
+                            class="relative flex items-center justify-center w-24 h-24 rounded-full bg-blue-600/90 hover:bg-blue-700 transition shadow-xl">
+
+                            <!-- Pulse -->
+                            <span class="absolute inline-flex h-full w-full rounded-full bg-blue-600 opacity-75 animate-ping"></span>
+
+                            <!-- Icon -->
+                            <i class="fas fa-play text-white text-3xl ml-1 relative"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <div class="mt-10 text-center">
+                    <a href="#contact"
+                       class="inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-full font-bold text-lg shadow-xl transition transform hover:-translate-y-1">
+                        <i class="fas fa-handshake"></i>
+                        영상 보고 바로 상담 신청하기
+                    </a>
+                    <p class="mt-4 text-sm text-gray-400">
+                        영상 확인 후 상담 신청 시, 상세 제안 자료 제공
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Why Choose Us (Problem & Solution) -->
     <section id="why" class="py-20 bg-white">
@@ -244,7 +243,7 @@
                     <div class="bg-blue-100 text-blue-600 font-bold px-3 py-1 rounded text-sm mr-4 mt-1">Session3</div>
                     <div>
                         <h4 class="font-bold text-lg">UI 커스터마이징 & 호환</h4>
-                        <p class="text-gray-600 text-sm mt-1">기존 타사 포토 키오스크에도 PhotoStory 프로그램 설치 및 UI 최적화 가능</p>
+                        <p class="text-gray-600 text-sm mt-1">기존 타사 포토키오스크에도 PhotoStory 프로그램 설치 및 UI 최적화 가능</p>
                     </div>
                 </div>
                 <!-- Item 4 -->
@@ -271,7 +270,7 @@
                         <p class="text-gray-600 text-sm mt-1">K-문화 콘텐츠 기능을 추가하여 글로벌 시장 진출 및 해외 마케팅 지원</p>
                     </div>
                 </div>
-                <!-- Item 7 (Skipped 7 as per prompt) -->
+                <!-- Item 7 -->
                 <div class="bg-white p-6 rounded-lg shadow-sm flex items-start md:col-span-2">
                     <div class="bg-blue-100 text-blue-600 font-bold px-3 py-1 rounded text-sm mr-4 mt-1">Session7</div>
                     <div>
