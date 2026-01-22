@@ -10,7 +10,7 @@
     <style>
         body { font-family: 'Noto Sans KR', sans-serif; }
         .hero-bg {
-            /* 수정됨: 기존의 아주 어두운 톤에서 조금 더 밝은 블루/네이비 톤으로 조정 */
+            /* 기존의 아주 어두운 톤에서 조금 더 밝은 블루/네이비 톤으로 조정된 배경 */
             background: linear-gradient(rgba(30, 58, 138, 0.75), rgba(15, 23, 42, 0.85)), url('https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
             background-size: cover;
             background-position: center;
@@ -49,8 +49,8 @@
             </h1>
             <p class="text-lg md:text-xl text-gray-100 mb-10 max-w-2xl mx-auto leading-relaxed">
                 AI PhotoStory(포토스토리)는 촬영부터 편집, 인화까지 원스톱으로 제공하는<br>
-                차세대 자동화 AI Photokiosk(포토키오스크)입니다.<br><class="hidden md:block">
-                미래2세생성,장래직업,스마트폰연동,증명사진 등 혁신적인 AI 기능으로<br>
+                차세대 자동화 AI Photokiosk(포토키오스크)입니다.<br>
+                미래2세생성, 장래직업, 스마트폰 연동, 증명사진 등 혁신적인 AI 기능으로<br>
                 귀하의 비즈니스에 폭발적인 수익 모델을 더하십시오.
             </p>
             <div class="flex flex-col md:flex-row gap-4 justify-center mb-12">
@@ -67,11 +67,8 @@
     </header>
 
     <!-- Video Showcase Section -->
-    <!-- 수정됨: 배경을 완전 블랙에서 조금 더 밝은 슬레이트 그레이 톤으로 변경 -->
     <section class="py-24 bg-gradient-to-b from-slate-900 to-gray-800">
         <div class="container mx-auto px-6">
-
-            <!-- Title -->
             <div class="text-center mb-12">
                 <h2 class="text-3xl md:text-4xl font-black text-white mb-4">
                     AI PhotoStory 실제 동작 영상
@@ -82,86 +79,66 @@
                 </p>
             </div>
 
-            <!-- Video Card -->
             <div class="max-w-5xl mx-auto relative group">
                 <div class="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-gray-600">
-
-                    <!-- Thumbnail -->
                     <img
                         src="https://img.youtube.com/vi/M0WfigWaXuY/maxresdefault.jpg"
                         alt="AI PhotoStory Video Thumbnail"
                         class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
-
-                    <!-- Overlay -->
                     <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
-
-                        <!-- Play Button -->
                         <a
                             href="https://www.youtube.com/watch?v=M0WfigWaXuY"
                             target="_blank"
                             class="relative flex items-center justify-center w-24 h-24 rounded-full bg-blue-600/90 hover:bg-blue-700 transition shadow-xl">
-
-                            <!-- Pulse -->
                             <span class="absolute inline-flex h-full w-full rounded-full bg-blue-600 opacity-75 animate-ping"></span>
-
-                            <!-- Icon -->
                             <i class="fas fa-play text-white text-3xl ml-1 relative"></i>
                         </a>
                     </div>
                 </div>
-
-                <!-- CTA -->
                 <div class="mt-10 text-center">
                     <a href="#contact"
                        class="inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-full font-bold text-lg shadow-xl transition transform hover:-translate-y-1">
                         <i class="fas fa-handshake"></i>
                         영상 보고 바로 상담 신청하기
                     </a>
-                    <p class="mt-4 text-sm text-gray-400">
-                        영상 확인 후 상담 문의 신청 시, 상세 제안 자료 및 견적 제공합니다
-                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Why Choose Us (Problem & Solution) -->
+    <!-- Why Choose Us -->
     <section id="why" class="py-20 bg-white">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold text-gray-900 mb-4">Why AI PhotoStory?</h2>
                 <p class="text-gray-600">포화된 포토키오스크 사진인화기 시장, 이제는 <span class="text-blue-600 font-bold">AI + 기술력</span>이 경쟁력입니다.</p>
             </div>
-
             <div class="grid md:grid-cols-3 gap-12">
-                <!-- Point 1 -->
                 <div class="group p-8 rounded-2xl bg-gray-50 hover:bg-white hover:shadow-xl transition border border-gray-100">
                     <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 transition">
                         <i class="fas fa-robot text-2xl text-blue-600 group-hover:text-white"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3">기본 오리지널 기능과 압도적인 AI 콘텐츠</h3>
                     <p class="text-gray-600 leading-relaxed">
-                        단순 촬영을 넘어섭니다. 얼굴 변환, 미래 직업 예측 등 AI 기술을 통해 고객에게 끊임없는 재미와 재방문 동기를 부여합니다.
+                        단순 촬영을 넘어섭니다. 얼굴 변환, 미래 직업 예측 등 AI 기술을 통해 고객에게 끊임없는 재미를 제공합니다.
                     </p>
                 </div>
-                <!-- Point 2 -->
                 <div class="group p-8 rounded-2xl bg-gray-50 hover:bg-white hover:shadow-xl transition border border-gray-100">
                     <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-purple-600 transition">
                         <i class="fas fa-mobile-alt text-2xl text-purple-600 group-hover:text-white"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3">모바일 스마트폰 사진 완벽 연동</h3>
                     <p class="text-gray-600 leading-relaxed">
-                        기기 촬영뿐만 아니라 휴대폰 속 오리지널 사진을 업로드하여 AI 변환 및 고화질 인화가 가능한 하이브리드 시스템입니다.
+                        휴대폰 속 사진을 업로드하여 AI 변환 및 고화질 인화가 가능한 하이브리드 시스템입니다.
                     </p>
                 </div>
-                <!-- Point 3 -->
                 <div class="group p-8 rounded-2xl bg-gray-50 hover:bg-white hover:shadow-xl transition border border-gray-100">
                     <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-green-600 transition">
                         <i class="fas fa-id-card text-2xl text-green-600 group-hover:text-white"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3">공공용 및 생활 밀착형 필수 서비스</h3>
                     <p class="text-gray-600 leading-relaxed">
-                        여권, 주민등록증 등 규격에 맞는 증명사진 촬영 및 인화 서비스를 제공하여 단순 오락을 넘어선 필수 수요를 흡수합니다.
+                        여권, 주민등록증 등 규격에 맞는 증명사진 촬영 및 인화 서비스를 제공합니다.
                     </p>
                 </div>
             </div>
@@ -170,61 +147,44 @@
 
     <!-- AI Core Features -->
     <section id="features" class="py-20 bg-gray-900 text-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <span class="text-purple-400 font-bold tracking-wide uppercase">Core Technology</span>
-                <h2 class="text-3xl md:text-4xl font-bold mt-2">AI PhotoStory 핵심 기능 5가지</h2>
-                <p class="text-gray-400 mt-4">고객의 호기심을 자극하고 매출을 극대화하는 킬러 콘텐츠</p>
+        <div class="container mx-auto px-6 text-center mb-16">
+            <span class="text-purple-400 font-bold tracking-wide uppercase">Core Technology</span>
+            <h2 class="text-3xl md:text-4xl font-bold mt-2">AI PhotoStory 핵심 기능 5가지</h2>
+        </div>
+        <div class="container mx-auto px-6 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-gray-800 p-8 rounded-xl border border-gray-700 hover:border-purple-500 transition">
+                <i class="fas fa-theater-masks text-purple-400 text-3xl mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">AI Face Swap</h3>
+                <p class="text-gray-400 text-sm">얼굴을 다른 인물로 자연스럽게 변환하는 기술입니다.</p>
             </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Feature 1 -->
-                <div class="bg-gray-800 p-8 rounded-xl border border-gray-700 hover:border-purple-500 transition">
-                    <div class="text-purple-400 text-3xl mb-4"><i class="fas fa-theater-masks"></i></div>
-                    <h3 class="text-xl font-bold mb-2">AI Face Swap (가상 얼굴)</h3>
-                    <p class="text-gray-400 text-sm">영상 속 인물의 얼굴을 다른 사람으로 변환. 실제 얼굴 공개 부담 없이 다양한 연출이 가능합니다.</p>
-                </div>
-                <!-- Feature 2 -->
-                <div class="bg-gray-800 p-8 rounded-xl border border-gray-700 hover:border-purple-500 transition">
-                    <div class="text-purple-400 text-3xl mb-4"><i class="fas fa-baby"></i></div>
-                    <h3 class="text-xl font-bold mb-2">AI F1 Generation (미래 2세)</h3>
-                    <p class="text-gray-400 text-sm">커플 고객 선호도 1위. 두 인물의 얼굴 특성을 분석하여 미래 자녀의 모습을 가상으로 생성합니다.</p>
-                </div>
-                <!-- Feature 3 -->
-                <div class="bg-gray-800 p-8 rounded-xl border border-gray-700 hover:border-purple-500 transition">
-                    <div class="text-purple-400 text-3xl mb-4"><i class="fas fa-image"></i></div>
-                    <h3 class="text-xl font-bold mb-2">AI Wallpaper (배경화면)</h3>
-                    <p class="text-gray-400 text-sm">사용자의 취향과 키워드에 맞춰 세상에 하나뿐인 고해상도 맞춤형 배경화면을 생성합니다.</p>
-                </div>
-                <!-- Feature 4 -->
-                <div class="bg-gray-800 p-8 rounded-xl border border-gray-700 hover:border-purple-500 transition">
-                    <div class="text-purple-400 text-3xl mb-4"><i class="fas fa-hourglass-half"></i></div>
-                    <h3 class="text-xl font-bold mb-2">AI Age Transform (나이 변환)</h3>
-                    <p class="text-gray-400 text-sm">유아기부터 노년기까지, 나의 과거와 미래 모습을 생생하게 체험하는 시간 여행 콘텐츠입니다.</p>
-                </div>
-                <!-- Feature 5 -->
-                <div class="bg-gray-800 p-8 rounded-xl border border-gray-700 hover:border-purple-500 transition">
-                    <div class="text-purple-400 text-3xl mb-4"><i class="fas fa-user-astronaut"></i></div>
-                    <h3 class="text-xl font-bold mb-2">AI Future Job (미래 직업)</h3>
-                    <p class="text-gray-400 text-sm">개인의 성향과 외모를 기반으로 미래 직업을 추천하고, 해당 직업의 모습을 시각화하여 보여줍니다.</p>
-                </div>
+            <div class="bg-gray-800 p-8 rounded-xl border border-gray-700 hover:border-purple-500 transition">
+                <i class="fas fa-baby text-purple-400 text-3xl mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">AI F1 Generation</h3>
+                <p class="text-gray-400 text-sm">두 인물의 특징을 분석해 가상 자녀의 모습을 생성합니다.</p>
+            </div>
+            <div class="bg-gray-800 p-8 rounded-xl border border-gray-700 hover:border-purple-500 transition">
+                <i class="fas fa-image text-purple-400 text-3xl mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">AI Wallpaper</h3>
+                <p class="text-gray-400 text-sm">개인 맞춤형 고해상도 배경화면을 AI가 제작합니다.</p>
+            </div>
+            <div class="bg-gray-800 p-8 rounded-xl border border-gray-700 hover:border-purple-500 transition">
+                <i class="fas fa-hourglass-half text-purple-400 text-3xl mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">AI Age Transform</h3>
+                <p class="text-gray-400 text-sm">나의 과거와 미래 모습을 생생하게 체험하는 시간 여행 콘텐츠입니다.</p>
+            </div>
+            <div class="bg-gray-800 p-8 rounded-xl border border-gray-700 hover:border-purple-500 transition">
+                <i class="fas fa-user-astronaut text-purple-400 text-3xl mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">AI Future Job</h3>
+                <p class="text-gray-400 text-sm">성향과 외모를 기반으로 미래 직업을 추천하고 시각화합니다.</p>
             </div>
         </div>
     </section>
 
-    <!-- Business Highlights (Curriculum) -->
+    <!-- Business Highlights -->
     <section class="py-20 bg-gray-50">
         <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row items-start justify-between mb-12">
-                <div class="md:w-1/2">
-                    <h2 class="text-3xl font-bold text-gray-900 mb-4">비즈니스 파트너십 하이라이트</h2>
-                    <p class="text-gray-600">㈜아이콤정보시스템과 함께하는 성공적인 비즈니스 로드맵을 제안합니다.</p>
-                    <p class="mt-4 text-sm font-bold text-blue-600"><i class="fas fa-map-marker-alt mr-2"></i>문의: ㈜아이콤정보시스템 및 PhotoStory 공식 채널. TEL: 02-861-1175</p>
-                </div>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-6">
-                <!-- Item 1 -->
+            <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">비즈니스 파트너십 하이라이트</h2>
+            <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
                 <div class="bg-white p-6 rounded-lg shadow-sm flex items-start">
                     <div class="bg-blue-100 text-blue-600 font-bold px-3 py-1 rounded text-sm mr-4 mt-1">Session1</div>
                     <div>
@@ -232,7 +192,6 @@
                         <p class="text-gray-600 text-sm mt-1">㈜아이콤정보시스템과 공식 파트너 관계 체결 및 지역 독점 영업권 보장</p>
                     </div>
                 </div>
-                <!-- Item 2 -->
                 <div class="bg-white p-6 rounded-lg shadow-sm flex items-start">
                     <div class="bg-blue-100 text-blue-600 font-bold px-3 py-1 rounded text-sm mr-4 mt-1">Session2</div>
                     <div>
@@ -240,39 +199,34 @@
                         <p class="text-gray-600 text-sm mt-1">학교, 관공서 대상 직접 판매/설치 및 렌탈, 구독 서비스 비즈니스 모델 지원</p>
                     </div>
                 </div>
-                <!-- Item 3 -->
                 <div class="bg-white p-6 rounded-lg shadow-sm flex items-start">
                     <div class="bg-blue-100 text-blue-600 font-bold px-3 py-1 rounded text-sm mr-4 mt-1">Session3</div>
                     <div>
                         <h4 class="font-bold text-lg">UI 커스터마이징 & 호환</h4>
-                        <p class="text-gray-600 text-sm mt-1">기존 타사 포토키오스크에도 PhotoStory 프로그램 설치 및 UI 최적화 가능</p>
+                        <p class="text-gray-600 text-sm mt-1">기존 타사 포토키오스크에도 PhotoStory 프로그램 설치 가능</p>
                     </div>
                 </div>
-                <!-- Item 4 -->
                 <div class="bg-white p-6 rounded-lg shadow-sm flex items-start">
                     <div class="bg-blue-100 text-blue-600 font-bold px-3 py-1 rounded text-sm mr-4 mt-1">Session4</div>
                     <div>
                         <h4 class="font-bold text-lg">통합 마케팅 웹사이트 구축</h4>
-                        <p class="text-gray-600 text-sm mt-1">브랜드 홈페이지 및 전환율 높은 랜딩페이지 제작 지원으로 영업력 강화</p>
+                        <p class="text-gray-600 text-sm mt-1">브랜드 홈페이지 및 전환율 높은 랜딩페이지 제작 지원</p>
                     </div>
                 </div>
-                <!-- Item 5 -->
                 <div class="bg-white p-6 rounded-lg shadow-sm flex items-start">
                     <div class="bg-blue-100 text-blue-600 font-bold px-3 py-1 rounded text-sm mr-4 mt-1">Session5</div>
                     <div>
                         <h4 class="font-bold text-lg">지속적인 AI 업그레이드</h4>
-                        <p class="text-gray-600 text-sm mt-1">일회성 판매에 그치지 않고, 최신 트렌드를 반영한 AI 콘텐츠 지속 개발 및 업데이트</p>
+                        <p class="text-gray-600 text-sm mt-1">AI를 이용한 새로운 콘텐츠 개발 및 지속적인 업그레이드 지원</p>
                     </div>
                 </div>
-                <!-- Item 6 -->
                 <div class="bg-white p-6 rounded-lg shadow-sm flex items-start">
                     <div class="bg-blue-100 text-blue-600 font-bold px-3 py-1 rounded text-sm mr-4 mt-1">Session6</div>
                     <div>
                         <h4 class="font-bold text-lg">글로벌 시장 마케팅</h4>
-                        <p class="text-gray-600 text-sm mt-1">K-문화 콘텐츠 기능을 추가하여 글로벌 시장 진출 및 해외 마케팅 지원</p>
+                        <p class="text-gray-600 text-sm mt-1">K-문화 콘텐츠 기능을 추가하여 글로벌 시장 진출 지원</p>
                     </div>
                 </div>
-                <!-- Item 7 -->
                 <div class="bg-white p-6 rounded-lg shadow-sm flex items-start md:col-span-2">
                     <div class="bg-blue-100 text-blue-600 font-bold px-3 py-1 rounded text-sm mr-4 mt-1">Session7</div>
                     <div>
@@ -284,50 +238,24 @@
         </div>
     </section>
 
-    <!-- Call To Action (Form) -->
+    <!-- Call To Action -->
     <section id="contact" class="py-20 bg-blue-900 text-white relative overflow-hidden">
-        <!-- Decor element -->
-        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 rounded-full bg-blue-500 opacity-20 blur-3xl"></div>
-        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-purple-500 opacity-20 blur-3xl"></div>
-
         <div class="container mx-auto px-6 relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12">
-            
             <div class="lg:w-1/2">
-                <h2 class="text-3xl md:text-5xl font-black mb-6 leading-tight">
-                    새로운 AI 시대<br>
-                    당신의 순간을 Photostory에<br>
-                    경험과 추억을 담아보세요.
-                    </h2>
-                <p class="text-blue-200 text-lg mb-8">
-                    지금 바로 상담을 신청하고<br>
-                    ㈜아이콤정보시스템의 파트너가 되어보세요.<br>
-                    성공적인 비즈니스의 시작을 함께합니다.
-                </p>
-                <div class="flex items-center gap-4 text-sm font-medium text-blue-200">
-                    <span><i class="fas fa-check-circle text-green-400 mr-2"></i>전국 설치 지원</span>
-                    <span><i class="fas fa-check-circle text-green-400 mr-2"></i>신속한 유지보수</span>
-                    <span><i class="fas fa-check-circle text-green-400 mr-2"></i>마케팅 자료 제공</span>
-                </div>
+                <h2 class="text-3xl md:text-5xl font-black mb-6">성공적인 비즈니스의 시작을 함께합니다.</h2>
+                <p class="text-blue-200 text-lg mb-8">지금 바로 상담을 신청하고 파트너가 되어보세요.</p>
             </div>
-
             <div class="lg:w-1/2 w-full bg-white text-gray-800 p-8 rounded-2xl shadow-2xl">
-                <h3 class="text-2xl font-bold mb-6 text-center">상담 및 구매 신청</h3>
-                <form onsubmit="event.preventDefault(); alert('상담 신청이 완료되었습니다. 담당자가 곧 연락드리겠습니다.');">
+                <h3 class="text-2xl font-bold mb-6 text-center">상담 신청</h3>
+                <form onsubmit="event.preventDefault(); alert('상담 신청이 완료되었습니다.');">
                     <div class="space-y-4">
+                        <input type="text" placeholder="성함" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 focus:outline-none focus:border-blue-500" required>
+                        <input type="tel" placeholder="연락처" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 focus:outline-none focus:border-blue-500" required>
+                        <input type="email" placeholder="이메일" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 focus:outline-none focus:border-blue-500" required>
+                        
+                        <!-- 방문 희망 일정 -->
                         <div>
-                            <label class="block text-sm font-bold mb-2">성명</label>
-                            <input type="text" placeholder="홍길동" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 focus:border-blue-500 focus:outline-none" required>
-                        </div>
-                        <div>
-                            <label class="block text-sm font-bold mb-2">연락처</label>
-                            <input type="tel" placeholder="010-0000-0000" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 focus:border-blue-500 focus:outline-none" required>
-                        </div>
-                        <div>
-                            <label class="block text-sm font-bold mb-2">이메일</label>
-                            <input type="email" placeholder="example@email.com" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 focus:border-blue-500 focus:outline-none" required>
-                        </div>
-                        <div>
-                            <label class="block text-sm font-bold mb-2">방문 희망 일정</label>
+                            <label class="block text-sm font-bold mb-2 text-gray-700">방문 희망 일정</label>
                             <div class="grid grid-cols-2 gap-2">
                                 <label class="flex items-center space-x-2 p-3 border rounded cursor-pointer hover:bg-blue-50">
                                     <input type="radio" name="date" class="form-radio text-blue-600">
@@ -339,11 +267,10 @@
                                 </label>
                             </div>
                         </div>
-                        <div class="pt-4">
-                            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-lg shadow-lg transform transition hover:-translate-y-1">
-                                [ 상담자 및 구매자 신청하기 ]
-                            </button>
-                        </div>
+
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-lg transition shadow-lg mt-4">
+                            [ 상담자 및 구매자 신청하기 ]
+                        </button>
                     </div>
                 </form>
             </div>
@@ -354,8 +281,16 @@
     <footer class="bg-gray-900 text-gray-500 py-10 border-t border-gray-800">
         <div class="container mx-auto px-6 text-center">
             <p class="mb-4 text-lg font-bold text-white">㈜아이콤정보시스템</p>
-            <p class="text-sm mb-2">AI PhotoStory 공식 총판 대리점 및 투자자 파트너 모집</p>
-            <p class="text-sm mb-2">TEL : 02-861-1175 , e-mail : icomis@idsystems.co.kr</p><p class="text-xs">&copy; 2026 ICOM Information Systems. All Rights Reserved.</p>
+            <p class="text-sm mb-2 text-gray-400">AI PhotoStory 공식 총판 대리점 및 투자자 파트너 모집</p>
+            <p class="text-sm mb-2">
+                <span>TEL : 02-861-1175</span>
+                <span class="mx-2">,</span>
+                <!-- 이메일 클릭 링크 적용 -->
+                <a href="mailto:icomis@idsystems.co.kr" class="hover:text-blue-400 transition underline underline-offset-4 decoration-gray-500 hover:decoration-blue-400">
+                    e-mail : icomis@idsystems.co.kr
+                </a>
+            </p>
+            <p class="text-xs mt-4 opacity-50">&copy; 2026 ICOM Information Systems. All Rights Reserved.</p>
         </div>
     </footer>
 </body>
