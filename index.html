@@ -10,7 +10,6 @@
     <style>
         body { font-family: 'Noto Sans KR', sans-serif; }
         .hero-bg {
-            /* 기존의 아주 어두운 톤에서 조금 더 밝은 블루/네이비 톤으로 조정된 배경 */
             background: linear-gradient(rgba(30, 58, 138, 0.75), rgba(15, 23, 42, 0.85)), url('https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
             background-size: cover;
             background-position: center;
@@ -49,7 +48,7 @@
             </h1>
             <p class="text-lg md:text-xl text-gray-100 mb-10 max-w-2xl mx-auto leading-relaxed">
                 AI PhotoStory(포토스토리)는 촬영부터 편집, 인화까지 원스톱으로 제공하는<br>
-                차세대 자동화 AI Photokiosk(포토키오스크)입니다.<br>
+                차세대 자동화 AI Photokiosk(포토키오스크)입니다.<br class="hidden md:block">
                 미래2세생성, 장래직업, 스마트폰 연동, 증명사진 등 혁신적인 AI 기능으로<br>
                 귀하의 비즈니스에 폭발적인 수익 모델을 더하십시오.
             </p>
@@ -282,15 +281,18 @@
         <div class="container mx-auto px-6 text-center">
             <p class="mb-4 text-lg font-bold text-white">㈜아이콤정보시스템</p>
             <p class="text-sm mb-2 text-gray-400">AI PhotoStory 공식 총판 대리점 및 투자자 파트너 모집</p>
-            <p class="text-sm mb-2">
-                <span>TEL : 02-861-1175</span>
-                <span class="mx-2">,</span>
+            <div class="text-sm flex flex-col md:flex-row justify-center items-center gap-2 md:gap-4">
+                <!-- 전화번호 클릭 링크 적용 -->
+                <a href="tel:02-861-1175" class="hover:text-blue-400 transition underline underline-offset-4 decoration-gray-500 hover:decoration-blue-400">
+                    TEL : 02-861-1175
+                </a>
+                <span class="hidden md:inline text-gray-700">|</span>
                 <!-- 이메일 클릭 링크 적용 -->
-                <a href="mailto:icomis@idsystems.co.kr" class="hover:text-blue-400 transition underline underline-offset-4 decoration-gray-500 hover:decoration-blue-400">
+                <a href="mailto:icomis@idsystems.co.kr" class="text-blue-400 hover:text-blue-300 underline underline-offset-4 decoration-gray-500 hover:decoration-blue-400 transition">
                     e-mail : icomis@idsystems.co.kr
                 </a>
-            </p>
-            <p class="text-xs mt-4 opacity-50">&copy; 2026 ICOM Information Systems. All Rights Reserved.</p>
+            </div>
+            <p class="text-xs mt-6 opacity-50">&copy; 2026 ICOM Information Systems. All Rights Reserved.</p>
         </div>
     </footer>
 </body>
